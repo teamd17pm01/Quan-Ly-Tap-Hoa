@@ -1,0 +1,9 @@
+C:\Users\phamh\source\repos\LoginForm\DAL_Login\bin\Debug\DAL_Login.dll
+C:\Users\phamh\source\repos\LoginForm\DAL_Login\bin\Debug\DAL_Login.pdb
+C:\Users\phamh\source\repos\LoginForm\DAL_Login\bin\Debug\DTO_Login.dll
+C:\Users\phamh\source\repos\LoginForm\DAL_Login\bin\Debug\DTO_Login.pdb
+C:\Users\phamh\source\repos\LoginForm\DAL_Login\obj\Debug\DAL_Login.csprojAssemblyReference.cache
+C:\Users\phamh\source\repos\LoginForm\DAL_Login\obj\Debug\DAL_Login.csproj.CoreCompileInputs.cache
+C:\Users\phamh\source\repos\LoginForm\DAL_Login\obj\Debug\DAL_Login.csproj.CopyComplete
+C:\Users\phamh\source\repos\LoginForm\DAL_Login\obj\Debug\DAL_Login.dll
+C:\Users\phamh\source\repos\LoginForm\DAL_Login\obj\Debug\DAL_Login.pdb
