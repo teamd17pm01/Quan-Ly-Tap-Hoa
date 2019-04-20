@@ -35,10 +35,10 @@
             this.ckKiemtra = new System.Windows.Forms.CheckBox();
             this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
             this.txtName = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.btnDangKi = new System.Windows.Forms.Button();
             this.txtUserName = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.txtPassword = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.txtPasswordComfirm = new Bunifu.Framework.UI.BunifuMaterialTextbox();
-            this.btnDangKi = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -82,7 +82,7 @@
             // 
             this.splitter1.Location = new System.Drawing.Point(0, 0);
             this.splitter1.Name = "splitter1";
-            this.splitter1.Size = new System.Drawing.Size(3, 689);
+            this.splitter1.Size = new System.Drawing.Size(3, 727);
             this.splitter1.TabIndex = 9;
             this.splitter1.TabStop = false;
             // 
@@ -112,77 +112,19 @@
             this.txtName.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtName.ForeColor = System.Drawing.Color.Silver;
             this.txtName.HintForeColor = System.Drawing.Color.Silver;
-            this.txtName.HintText = "Họ và tên";
+            this.txtName.HintText = "họ và tên";
             this.txtName.isPassword = false;
             this.txtName.LineFocusedColor = System.Drawing.Color.DodgerBlue;
             this.txtName.LineIdleColor = System.Drawing.Color.Silver;
             this.txtName.LineMouseHoverColor = System.Drawing.Color.Silver;
             this.txtName.LineThickness = 1;
-            this.txtName.Location = new System.Drawing.Point(38, 170);
+            this.txtName.Location = new System.Drawing.Point(41, 174);
             this.txtName.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(514, 66);
             this.txtName.TabIndex = 11;
             this.txtName.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            // 
-            // txtUserName
-            // 
-            this.txtUserName.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtUserName.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtUserName.ForeColor = System.Drawing.Color.Silver;
-            this.txtUserName.HintForeColor = System.Drawing.Color.Silver;
-            this.txtUserName.HintText = "User Name";
-            this.txtUserName.isPassword = false;
-            this.txtUserName.LineFocusedColor = System.Drawing.Color.DodgerBlue;
-            this.txtUserName.LineIdleColor = System.Drawing.Color.Silver;
-            this.txtUserName.LineMouseHoverColor = System.Drawing.Color.Silver;
-            this.txtUserName.LineThickness = 1;
-            this.txtUserName.Location = new System.Drawing.Point(38, 261);
-            this.txtUserName.Margin = new System.Windows.Forms.Padding(4);
-            this.txtUserName.Name = "txtUserName";
-            this.txtUserName.Size = new System.Drawing.Size(514, 52);
-            this.txtUserName.TabIndex = 12;
-            this.txtUserName.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            // 
-            // txtPassword
-            // 
-            this.txtPassword.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtPassword.Font = new System.Drawing.Font("Century Gothic", 12F);
-            this.txtPassword.ForeColor = System.Drawing.Color.Silver;
-            this.txtPassword.HintForeColor = System.Drawing.Color.Silver;
-            this.txtPassword.HintText = "Password";
-            this.txtPassword.isPassword = false;
-            this.txtPassword.LineFocusedColor = System.Drawing.Color.DodgerBlue;
-            this.txtPassword.LineIdleColor = System.Drawing.Color.Silver;
-            this.txtPassword.LineMouseHoverColor = System.Drawing.Color.Silver;
-            this.txtPassword.LineThickness = 1;
-            this.txtPassword.Location = new System.Drawing.Point(38, 333);
-            this.txtPassword.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
-            this.txtPassword.Name = "txtPassword";
-            this.txtPassword.Size = new System.Drawing.Size(514, 77);
-            this.txtPassword.TabIndex = 13;
-            this.txtPassword.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.txtPassword.OnValueChanged += new System.EventHandler(this.txtPassword_OnValueChanged);
-            // 
-            // txtPasswordComfirm
-            // 
-            this.txtPasswordComfirm.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtPasswordComfirm.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPasswordComfirm.ForeColor = System.Drawing.Color.Silver;
-            this.txtPasswordComfirm.HintForeColor = System.Drawing.Color.Silver;
-            this.txtPasswordComfirm.HintText = "Confirm Password";
-            this.txtPasswordComfirm.isPassword = false;
-            this.txtPasswordComfirm.LineFocusedColor = System.Drawing.Color.DodgerBlue;
-            this.txtPasswordComfirm.LineIdleColor = System.Drawing.Color.Silver;
-            this.txtPasswordComfirm.LineMouseHoverColor = System.Drawing.Color.Silver;
-            this.txtPasswordComfirm.LineThickness = 1;
-            this.txtPasswordComfirm.Location = new System.Drawing.Point(38, 422);
-            this.txtPasswordComfirm.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
-            this.txtPasswordComfirm.Name = "txtPasswordComfirm";
-            this.txtPasswordComfirm.Size = new System.Drawing.Size(514, 70);
-            this.txtPasswordComfirm.TabIndex = 14;
-            this.txtPasswordComfirm.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.txtPasswordComfirm.OnValueChanged += new System.EventHandler(this.bunifuMaterialTextbox2_OnValueChanged);
+            this.txtName.OnValueChanged += new System.EventHandler(this.txtName_OnValueChanged);
             // 
             // btnDangKi
             // 
@@ -199,12 +141,74 @@
             this.btnDangKi.UseVisualStyleBackColor = false;
             this.btnDangKi.Click += new System.EventHandler(this.bunifuFlatButton1_Click);
             // 
+            // txtUserName
+            // 
+            this.txtUserName.BackColor = System.Drawing.Color.White;
+            this.txtUserName.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtUserName.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtUserName.ForeColor = System.Drawing.Color.Silver;
+            this.txtUserName.HintForeColor = System.Drawing.Color.Silver;
+            this.txtUserName.HintText = "họ và tên";
+            this.txtUserName.isPassword = false;
+            this.txtUserName.LineFocusedColor = System.Drawing.Color.DodgerBlue;
+            this.txtUserName.LineIdleColor = System.Drawing.Color.Silver;
+            this.txtUserName.LineMouseHoverColor = System.Drawing.Color.Silver;
+            this.txtUserName.LineThickness = 1;
+            this.txtUserName.Location = new System.Drawing.Point(41, 261);
+            this.txtUserName.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtUserName.Name = "txtUserName";
+            this.txtUserName.Size = new System.Drawing.Size(514, 66);
+            this.txtUserName.TabIndex = 12;
+            this.txtUserName.Text = "User Name";
+            this.txtUserName.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
+            // txtPassword
+            // 
+            this.txtPassword.BackColor = System.Drawing.Color.White;
+            this.txtPassword.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtPassword.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPassword.ForeColor = System.Drawing.Color.Silver;
+            this.txtPassword.HintForeColor = System.Drawing.Color.Silver;
+            this.txtPassword.HintText = "họ và tên";
+            this.txtPassword.isPassword = false;
+            this.txtPassword.LineFocusedColor = System.Drawing.Color.DodgerBlue;
+            this.txtPassword.LineIdleColor = System.Drawing.Color.Silver;
+            this.txtPassword.LineMouseHoverColor = System.Drawing.Color.Silver;
+            this.txtPassword.LineThickness = 1;
+            this.txtPassword.Location = new System.Drawing.Point(41, 346);
+            this.txtPassword.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtPassword.Name = "txtPassword";
+            this.txtPassword.Size = new System.Drawing.Size(514, 66);
+            this.txtPassword.TabIndex = 13;
+            this.txtPassword.Text = "Password";
+            this.txtPassword.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
+            // txtPasswordComfirm
+            // 
+            this.txtPasswordComfirm.BackColor = System.Drawing.Color.White;
+            this.txtPasswordComfirm.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtPasswordComfirm.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPasswordComfirm.ForeColor = System.Drawing.Color.Silver;
+            this.txtPasswordComfirm.HintForeColor = System.Drawing.Color.Silver;
+            this.txtPasswordComfirm.HintText = "họ và tên";
+            this.txtPasswordComfirm.isPassword = false;
+            this.txtPasswordComfirm.LineFocusedColor = System.Drawing.Color.DodgerBlue;
+            this.txtPasswordComfirm.LineIdleColor = System.Drawing.Color.Silver;
+            this.txtPasswordComfirm.LineMouseHoverColor = System.Drawing.Color.Silver;
+            this.txtPasswordComfirm.LineThickness = 1;
+            this.txtPasswordComfirm.Location = new System.Drawing.Point(41, 432);
+            this.txtPasswordComfirm.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtPasswordComfirm.Name = "txtPasswordComfirm";
+            this.txtPasswordComfirm.Size = new System.Drawing.Size(514, 66);
+            this.txtPasswordComfirm.TabIndex = 14;
+            this.txtPasswordComfirm.Text = "Comfirm Password";
+            this.txtPasswordComfirm.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtPasswordComfirm.OnValueChanged += new System.EventHandler(this.bunifuMaterialTextbox1_OnValueChanged_1);
+            // 
             // frmRegister
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(656, 689);
+            this.ClientSize = new System.Drawing.Size(647, 727);
             this.Controls.Add(this.txtPasswordComfirm);
             this.Controls.Add(this.txtPassword);
             this.Controls.Add(this.txtUserName);
@@ -236,9 +240,11 @@
         private System.Windows.Forms.CheckBox ckKiemtra;
         private DevExpress.XtraEditors.SimpleButton simpleButton1;
         private Bunifu.Framework.UI.BunifuMaterialTextbox txtName;
+
+        
+        private System.Windows.Forms.Button btnDangKi;
         private Bunifu.Framework.UI.BunifuMaterialTextbox txtUserName;
         private Bunifu.Framework.UI.BunifuMaterialTextbox txtPassword;
         private Bunifu.Framework.UI.BunifuMaterialTextbox txtPasswordComfirm;
-        private System.Windows.Forms.Button btnDangKi;
     }
 }

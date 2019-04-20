@@ -60,3 +60,5 @@ C:\Users\phamh\source\repos\LoginForm\LoginForm\obj\Debug\LoginForm.FrmForgotPas
 C:\Users\phamh\source\repos\LoginForm\LoginForm\obj\Debug\LoginForm.FrmMain.resources
 C:\Users\phamh\source\repos\LoginForm\LoginForm\bin\Debug\VisualReactiveWinForms.dll
 C:\Users\phamh\source\repos\LoginForm\LoginForm\bin\Debug\VisualReactiveWinForms.xml
+C:\Users\phamh\source\repos\LoginForm\LoginForm\bin\Debug\Bunifu_UI_v1.5.3.dll
+C:\Users\phamh\source\repos\LoginForm\LoginForm\bin\Debug\LoginForm.exe.config

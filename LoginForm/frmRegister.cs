@@ -108,5 +108,15 @@ namespace LoginForm
         {
 
         }
+
+        private void txtName_OnValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bunifuMaterialTextbox1_OnValueChanged_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }
