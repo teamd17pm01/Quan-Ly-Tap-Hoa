@@ -24,21 +24,33 @@ namespace LoginForm
         }
         bus func = new bus();
         dto thongtin;
+        dto thongtin2;
         private void bunifuThinButton21_Click(object sender, EventArgs e)
         {
-            string len = txtPassword.Text;
+            
+            string len = txtPassword.Text; //Lay chieu dai
             thongtin = new dto(txtUsername.Text, txtPassword.Text);
+            thongtin2 = new dto(txtUsername.Text);
+
             if (txtUsername.Text != "" && txtPassword.Text != "" && txtConfirm.Text != "")
             {
                 if (txtPassword.Text == txtConfirm.Text)
                 {
-                   
                     if (len.Length > 3)
                     {
-                        if (func.Find2(thongtin))
+                        if (func.KiemTraAccountTonTai(thongtin2))
                         {
-                            MessageBox.Show("Password đã được Reset", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
-                            func.ResetPassWord(txtPassword.Text, txtUsername.Text);
+                            try
+                            {
+                                func.ResetPassWord(thongtin);
+                                MessageBox.Show("thanh Cong");
+                            }
+                            catch
+                            {
+                                MessageBox.Show("That Bai");
+                            }
+                              //  MessageBox.Show("Password đã được Reset", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+                           
                         }
                         else
                         {

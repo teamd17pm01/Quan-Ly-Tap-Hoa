@@ -22,11 +22,9 @@ namespace DTO_Login
 
         public dto(string name,string user,string psw)
         {
-            //this.Id = id;
             this.Name = name;
             this.User = user;
             this.Psw = psw;
-            //this.Id=
         }
         public dto(string user,string psw)
         {

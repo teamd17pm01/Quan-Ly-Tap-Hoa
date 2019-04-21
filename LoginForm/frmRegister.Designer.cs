@@ -46,19 +46,19 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.Maroon;
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Location = new System.Drawing.Point(-31, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(694, 148);
+            this.panel1.Size = new System.Drawing.Size(662, 107);
             this.panel1.TabIndex = 0;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft JhengHei UI", 30F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft JhengHei UI", 40F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(28, 38);
+            this.label1.Location = new System.Drawing.Point(29, 23);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(272, 77);
+            this.label1.Size = new System.Drawing.Size(363, 102);
             this.label1.TabIndex = 0;
             this.label1.Text = "Register";
             // 
@@ -69,7 +69,7 @@
             this.btnCancel.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCancel.Font = new System.Drawing.Font("Microsoft YaHei UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnCancel.Location = new System.Drawing.Point(354, 604);
+            this.btnCancel.Location = new System.Drawing.Point(258, 538);
             this.btnCancel.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(184, 59);
@@ -82,7 +82,7 @@
             // 
             this.splitter1.Location = new System.Drawing.Point(0, 0);
             this.splitter1.Name = "splitter1";
-            this.splitter1.Size = new System.Drawing.Size(3, 727);
+            this.splitter1.Size = new System.Drawing.Size(3, 622);
             this.splitter1.TabIndex = 9;
             this.splitter1.TabStop = false;
             // 
@@ -90,7 +90,7 @@
             // 
             this.ckKiemtra.AutoSize = true;
             this.ckKiemtra.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ckKiemtra.Location = new System.Drawing.Point(38, 537);
+            this.ckKiemtra.Location = new System.Drawing.Point(38, 505);
             this.ckKiemtra.Name = "ckKiemtra";
             this.ckKiemtra.Size = new System.Drawing.Size(323, 24);
             this.ckKiemtra.TabIndex = 5;
@@ -100,7 +100,7 @@
             // 
             // simpleButton1
             // 
-            this.simpleButton1.Location = new System.Drawing.Point(388, 540);
+            this.simpleButton1.Location = new System.Drawing.Point(383, 508);
             this.simpleButton1.Name = "simpleButton1";
             this.simpleButton1.Size = new System.Drawing.Size(23, 21);
             this.simpleButton1.TabIndex = 10;
@@ -118,7 +118,7 @@
             this.txtName.LineIdleColor = System.Drawing.Color.Silver;
             this.txtName.LineMouseHoverColor = System.Drawing.Color.Silver;
             this.txtName.LineThickness = 1;
-            this.txtName.Location = new System.Drawing.Point(41, 174);
+            this.txtName.Location = new System.Drawing.Point(38, 130);
             this.txtName.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(514, 66);
@@ -132,7 +132,7 @@
             this.btnDangKi.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnDangKi.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDangKi.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnDangKi.Location = new System.Drawing.Point(38, 604);
+            this.btnDangKi.Location = new System.Drawing.Point(38, 537);
             this.btnDangKi.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnDangKi.Name = "btnDangKi";
             this.btnDangKi.Size = new System.Drawing.Size(188, 59);
@@ -154,7 +154,7 @@
             this.txtUserName.LineIdleColor = System.Drawing.Color.Silver;
             this.txtUserName.LineMouseHoverColor = System.Drawing.Color.Silver;
             this.txtUserName.LineThickness = 1;
-            this.txtUserName.Location = new System.Drawing.Point(41, 261);
+            this.txtUserName.Location = new System.Drawing.Point(41, 217);
             this.txtUserName.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtUserName.Name = "txtUserName";
             this.txtUserName.Size = new System.Drawing.Size(514, 66);
@@ -175,7 +175,7 @@
             this.txtPassword.LineIdleColor = System.Drawing.Color.Silver;
             this.txtPassword.LineMouseHoverColor = System.Drawing.Color.Silver;
             this.txtPassword.LineThickness = 1;
-            this.txtPassword.Location = new System.Drawing.Point(41, 346);
+            this.txtPassword.Location = new System.Drawing.Point(41, 309);
             this.txtPassword.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.Size = new System.Drawing.Size(514, 66);
@@ -196,7 +196,7 @@
             this.txtPasswordComfirm.LineIdleColor = System.Drawing.Color.Silver;
             this.txtPasswordComfirm.LineMouseHoverColor = System.Drawing.Color.Silver;
             this.txtPasswordComfirm.LineThickness = 1;
-            this.txtPasswordComfirm.Location = new System.Drawing.Point(41, 432);
+            this.txtPasswordComfirm.Location = new System.Drawing.Point(41, 407);
             this.txtPasswordComfirm.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtPasswordComfirm.Name = "txtPasswordComfirm";
             this.txtPasswordComfirm.Size = new System.Drawing.Size(514, 66);
@@ -208,7 +208,7 @@
             // frmRegister
             // 
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(647, 727);
+            this.ClientSize = new System.Drawing.Size(580, 622);
             this.Controls.Add(this.txtPasswordComfirm);
             this.Controls.Add(this.txtPassword);
             this.Controls.Add(this.txtUserName);
@@ -221,6 +221,7 @@
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmRegister";
+            this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Show;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Register";
             this.Load += new System.EventHandler(this.frmRegister_Load);

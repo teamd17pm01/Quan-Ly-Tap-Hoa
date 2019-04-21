@@ -15,7 +15,7 @@ namespace DAL_Login
         {
             string id = "";
             try
-            {
+            {   
                 connection.Open();
                 string sql = string.Format("SELECT *FROM tbl_user WHERE  name_user='{0}' and pass='{1}'", tv.Name, tv.Psw);
                 SqlCommand cmd = new SqlCommand(sql, connection);
@@ -41,9 +41,25 @@ namespace DAL_Login
             }
             return id;
         }
-        public bool KtTonTai(dto tv)
+        public bool KtTaiKhoan(dto tv)
         {
             try
+            {
+                LinQBaseDataContext context = new LinQBaseDataContext();
+                var linq = from person in context.tbl_users
+                           where person.user_name == tv.User && person.pass == tv.Psw
+                           select person;
+                var list = linq.ToList();
+                if (list.Count > 0)
+                {
+                    return true;
+                }
+            }
+            catch
+            {
+
+            }
+            /*try
             {
                 connection.Open();
                 string sql = string.Format("SELECT *FROM tbl_user WHERE  user_name='{0}' and pass='{1}'",tv.User,tv.Psw);
@@ -61,13 +77,30 @@ namespace DAL_Login
             finally
             {
                 connection.Close();
-            }
+            }*/
             return false;
         }
-        
-        public bool KiemTraTaiKhoan(dto tv)
+       
+        public bool KiemTraTonTai(dto tv)
         {
             try
+            {
+                LinQBaseDataContext context = new LinQBaseDataContext(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\phamh\source\repos\LoginForm\DAL_Login\QLlogin.mdf;Integrated Security=True");
+                var linq = from person in context.tbl_users
+                           where person.user_name == tv.User
+                           select person;
+                var list = linq.ToList();
+                if (list.Count>0)
+                {
+                    return true;
+                }
+            }
+            catch (Exception)
+            {
+               
+            }
+            return false;
+            /*try
             {
                 connection.Open();
                 string sql = string.Format("SELECT *FROM tbl_user WHERE  user_name='{0}'", tv.User);
@@ -86,7 +119,7 @@ namespace DAL_Login
             {
                 connection.Close();
             }
-            return false;
+            return false;*/
         }
         //Phan Quyen
         public string id_per(int id_user)
@@ -124,6 +157,7 @@ namespace DAL_Login
 
         public bool Add(dto tv)
         {
+           
             try
             {
                 connection.Open();
@@ -146,8 +180,26 @@ namespace DAL_Login
             }
             return false;
         }
-        public bool UpdatePassword(string password,string user)
+        public bool UpdatePassword(dto tv)
         {
+            LinQBaseDataContext context = new LinQBaseDataContext();
+            var linq = from person in context.tbl_users
+                       where person.user_name == tv.User
+                       select person;
+            foreach(var user in linq)
+            {
+                user.pass = tv.Psw;
+            }
+            try
+            {
+                context.SubmitChanges();
+                return true;
+            }
+            catch (Exception)
+            {
+
+            }
+            /*
             try
             {
                 connection.Open();
@@ -168,32 +220,29 @@ namespace DAL_Login
             {
                 connection.Close();
             }
+            */
             return false;
+            
         }
-        public bool Add2(dto tv)
+        public bool addNewUser(dto tv)
         {
-            try
-            {
-                connection.Open();
-                //string sql = string.Format("INSERT INTO tbl_user(name_user, user_name, pass) VALUES('{0}', '{1]', '{2}')",tv.Name,tv.User,tv.Psw);
-                string sql = string.Format("INSERT INTO tbl_user(name_user,user_name,pass) VALUES('{0}', '{1}', '{2}');" +"SELECT SCOPE_IDENTITY()", tv.Name, tv.User, tv.Psw);
-                SqlCommand cmd = new SqlCommand(sql, connection);
-                //string sql2 = string.Format("INSERT INTO tbl_per_relationship(id_user_rel, id_per_rel) VALUES('{0}', '{1}')");
-                int ID = Convert.ToInt32(cmd.ExecuteScalar());
-                string sql2 = string.Format("INSERT INTO tbl_per_relationship(id_user_rel) VALUES({0})", ID);
-                cmd = new SqlCommand(sql2, connection);
-                if (ID > 0&&cmd.ExecuteNonQuery()>0)
+            string connect = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\phamh\source\repos\LoginForm\DAL_Login\QLlogin.mdf;Integrated Security=True";
+                LinQBaseDataContext context = new LinQBaseDataContext(connect);
+                tbl_user course = new tbl_user
                 {
-                    return true;
-                }
+                    name_user = tv.Name,
+                    user_name = tv.User,
+                    pass = tv.Psw,
+                };
+                context.tbl_users.InsertOnSubmit(course);
+                
+            try {
+                context.SubmitChanges();
+                return true;
             }
-            catch (Exception)
+            catch
             {
-
-            }
-            finally
-            {
-                connection.Close();
+             
             }
             return false;
         }

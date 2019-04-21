@@ -47,6 +47,7 @@ namespace LoginForm
                         func = new bus();
                         if (func.AddTv(thongtin))
                         {
+                            
                             MessageBox.Show("Đăng kí thành công", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
                         }
                         else
@@ -69,6 +70,11 @@ namespace LoginForm
                 MessageBox.Show("Mời Bạn Nhập Mọi Thứ", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
 
             }
+
+        }
+
+        private void Load_Data()
+        {
 
         }
         private void txtPasswordComfirm_OnValueChanged(object sender, EventArgs e)

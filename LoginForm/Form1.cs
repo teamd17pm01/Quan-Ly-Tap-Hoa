@@ -59,14 +59,14 @@ namespace LoginForm
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            dto thongtin = new dto(txtName.Text, txtPass.Text);
-            dto thongtin2 = new dto(txtName.Text);
+            dto thongtin = new dto(txtName.Text, txtPass.Text);    //thong tin de tim kiem tra ton tai
+            dto thongtin2 = new dto(txtName.Text);                  //Thong tin de kiem tra 
             id = b.idthanhvien(thongtin);
             if (txtName.Text != "" && txtPass.Text != "")
             {
-                if (b.Find2(thongtin2))
+                if (b.KiemTraAccountTonTai(thongtin2))
                 {
-                    if (b.Find(thongtin))
+                    if (b.KiemTraAccount(thongtin))
                     {
                         t = new Thread(new ThreadStart(Splash));
                         t.Start();

@@ -16,13 +16,13 @@ namespace BUS_QAL
         {
             return data.getID(tv);
         }
-        public bool Find(dto tv)
+        public bool KiemTraAccountTonTai(dto tv)
         {
-            return data.KtTonTai(tv);
+            return data.KiemTraTonTai(tv);
         }
-        public bool Find2(dto tv)
+        public bool KiemTraAccount(dto tv)
         {
-            return data.KiemTraTaiKhoan(tv);
+            return data.KtTaiKhoan(tv);
         }
         public string Permission(int id)
         {
@@ -30,11 +30,11 @@ namespace BUS_QAL
         }
         public bool AddTv(dto tv)
         {
-            return data.Add2(tv);
+            return data.addNewUser(tv);
         }
-        public bool ResetPassWord(string a,string b)
+        public bool ResetPassWord(dto tv)
         {
-            return data.UpdatePassword(a, b);
+            return data.UpdatePassword(tv);
         }
     }
 }

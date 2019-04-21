@@ -31,6 +31,7 @@ namespace LoginForm
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmForgotPassWord));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnOut = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.txtUsername = new Bunifu.Framework.UI.BunifuMetroTextbox();
@@ -40,7 +41,6 @@ namespace LoginForm
             this.txtPassword = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.txtConfirm = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.bunifuThinButton21 = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.btnOut = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -53,6 +53,22 @@ namespace LoginForm
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(665, 124);
             this.panel1.TabIndex = 0;
+            // 
+            // btnOut
+            // 
+            this.btnOut.BackColor = System.Drawing.Color.SkyBlue;
+            this.btnOut.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnOut.Font = new System.Drawing.Font("Comic Sans MS", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnOut.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnOut.Location = new System.Drawing.Point(561, 12);
+            this.btnOut.Name = "btnOut";
+            this.btnOut.Size = new System.Drawing.Size(75, 57);
+            this.btnOut.TabIndex = 1;
+            this.btnOut.Text = "X";
+            this.btnOut.UseVisualStyleBackColor = false;
+            this.btnOut.Click += new System.EventHandler(this.button1_Click);
+            this.btnOut.MouseLeave += new System.EventHandler(this.btnOut_MouseLeave);
+            this.btnOut.MouseHover += new System.EventHandler(this.btnOut_MouseHover);
             // 
             // label1
             // 
@@ -72,7 +88,7 @@ namespace LoginForm
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Uighur", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Gray;
-            this.label2.Location = new System.Drawing.Point(28, 144);
+            this.label2.Location = new System.Drawing.Point(16, 142);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(599, 40);
             this.label2.TabIndex = 2;
@@ -188,28 +204,12 @@ namespace LoginForm
             this.bunifuThinButton21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.bunifuThinButton21.Click += new System.EventHandler(this.bunifuThinButton21_Click);
             // 
-            // btnOut
-            // 
-            this.btnOut.BackColor = System.Drawing.Color.SkyBlue;
-            this.btnOut.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnOut.Font = new System.Drawing.Font("Comic Sans MS", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnOut.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnOut.Location = new System.Drawing.Point(571, 11);
-            this.btnOut.Name = "btnOut";
-            this.btnOut.Size = new System.Drawing.Size(75, 57);
-            this.btnOut.TabIndex = 1;
-            this.btnOut.Text = "X";
-            this.btnOut.UseVisualStyleBackColor = false;
-            this.btnOut.Click += new System.EventHandler(this.button1_Click);
-            this.btnOut.MouseLeave += new System.EventHandler(this.btnOut_MouseLeave);
-            this.btnOut.MouseHover += new System.EventHandler(this.btnOut_MouseHover);
-            // 
             // FrmForgotPassWord
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.ClientSize = new System.Drawing.Size(653, 730);
+            this.ClientSize = new System.Drawing.Size(634, 730);
             this.Controls.Add(this.bunifuThinButton21);
             this.Controls.Add(this.txtConfirm);
             this.Controls.Add(this.txtPassword);
