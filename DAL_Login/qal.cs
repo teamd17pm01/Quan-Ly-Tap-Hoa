@@ -45,7 +45,7 @@ namespace DAL_Login
         {
             try
             {
-                LinQBaseDataContext context = new LinQBaseDataContext();
+                LinQBaseDataContext context = new LinQBaseDataContext(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\phamh\source\repos\LoginForm\DAL_Login\QLlogin.mdf;Integrated Security=True");
                 var linq = from person in context.tbl_users
                            where person.user_name == tv.User && person.pass == tv.Psw
                            select person;
