@@ -21,33 +21,11 @@ namespace LoginForm
         public static string id;
         public bus b = new bus();
         Thread t;
+        FrmMain2 frm;
         public Form1()
         {
-            t = new Thread(new ThreadStart(Splash));
-            t.Start();
 
-            string str = string.Empty;
-            for (int i = 0; i < 30000; i++)
-            {
-                str += i.ToString();
-            }
-            t.Abort();
-            
             InitializeComponent();
-        }
-
-        private void labelControl2_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void btnExit_Click(object sender, EventArgs e)
-        {
-            DialogResult result = MessageBox.Show("Bạn Muốn Thoát!!!", "Thông Báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-            if (result == DialogResult.Yes)
-            {
-                Application.Exit();
-            }
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -57,41 +35,20 @@ namespace LoginForm
 
 
 
-        private void btnLogin_Click(object sender, EventArgs e)
+        public void btnLogin_Click(object sender, EventArgs e)
         {
-            dto thongtin = new dto(txtName.Text, txtPass.Text);    //thong tin de tim kiem tra ton tai
-            dto thongtin2 = new dto(txtName.Text);                  //Thong tin de kiem tra 
-            id = b.idthanhvien(thongtin);
-            if (txtName.Text != "" && txtPass.Text != "")
+            Login();
+        }
+        private void load_Splash()
+        {
+            t = new Thread(new ThreadStart(Splash));
+            t.Start();
+            string str = string.Empty;
+            for (int i = 0; i < 30000; i++)
             {
-                if (b.KiemTraAccountTonTai(thongtin2))
-                {
-                    if (b.KiemTraAccount(thongtin))
-                    {
-                        t = new Thread(new ThreadStart(Splash));
-                        t.Start();
-                        string str = string.Empty;
-                        for (int i = 0; i < 30000; i++)
-                        {
-                            str += i.ToString();
-                        }
-                        t.Abort();
-                        MessageBox.Show("ID Của User Là : "+id, "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
-                    }
-                    else
-                    {
-                        MessageBox.Show("Sai Mật Khẩu", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    }
-                }
-                else
-                {
-                    MessageBox.Show("Tai Khoan Khong Ton Tai!!!","Thong Bao", MessageBoxButtons.OK, MessageBoxIcon.Stop);
-                }
+                str += i.ToString();
             }
-            else
-            {
-                MessageBox.Show("Moi Nhap Day Du !!!","Thong Bao",MessageBoxButtons.OK,MessageBoxIcon.Warning);
-            }
+            t.Abort();
         }
 
         private void Splash()
@@ -107,17 +64,7 @@ namespace LoginForm
             MessageBox.Show("Chức năng của ID này là : " + b.Permission(int.Parse(id)));
         }
 
-        private void txtName_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void txtName_OnValueChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void metro_OnValueChanged(object sender, EventArgs e)
         {
 
         }
@@ -146,6 +93,45 @@ namespace LoginForm
         {
             frmRegister frm = new frmRegister();
             frm.Show();
+        }
+        private void Login()
+        {
+            dto thongtin = new dto(txtName.Text, txtPass.Text);    //thong tin de tim kiem tra ton tai
+            dto thongtin2 = new dto(txtName.Text);                  //Thong tin de kiem tra 
+            id = b.idthanhvien(thongtin);
+            if (txtName.Text != "" && txtPass.Text != "")
+            {
+                if (b.KiemTraAccountTonTai(thongtin2))
+                {
+                    if (b.KiemTraAccount(thongtin))
+                    {
+                        load_Splash();
+                        frm = new FrmMain2();
+                        frm.Show();
+                        this.Hide();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Sai Mật Khẩu", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Tai Khoan Khong Ton Tai!!!", "Thong Bao", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+                }
+            }
+            else
+            {
+                MessageBox.Show("Moi Nhap Day Du !!!", "Thong Bao", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
+
+        private void Form1_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                Login();
+            }
         }
     }
 }

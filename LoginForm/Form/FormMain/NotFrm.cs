@@ -31,7 +31,7 @@ namespace LoginForm
 
         private void button2_Click(object sender, EventArgs e)
         {
-            change_color(Color.Red, Color.FromArgb(255, 128, 128), Color.FromArgb(192, 0, 0), Color.White, btnSales.Text);
+            //change_color(Color.Red, Color.FromArgb(255, 128, 128), Color.FromArgb(192, 0, 0), Color.White, btnSales.Text);
         }
 
         private void button5_Click(object sender, EventArgs e)
@@ -52,7 +52,7 @@ namespace LoginForm
 
         private void button1_Click(object sender, EventArgs e)
         {
-            change_color(Color.AntiqueWhite, Color.FromArgb(255, 224, 192),Color.FromArgb(255, 128, 0) , Color.Black, btnHome.Text);
+            //change_color(Color.AntiqueWhite, Color.FromArgb(255, 224, 192),Color.FromArgb(255, 128, 0) , Color.Black, btnHome.Text);
         }
         //Thay Doi Hien Thi
         private void change_color(Color theme, Color Down,Color Over,Color colorFont,string title)

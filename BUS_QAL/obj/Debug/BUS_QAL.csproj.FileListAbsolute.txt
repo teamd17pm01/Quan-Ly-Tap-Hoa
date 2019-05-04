@@ -1,14 +1,14 @@
+C:\Users\phamh\source\repos\LoginForm\BUS_QAL\bin\Debug\QLlogin.mdf
+C:\Users\phamh\source\repos\LoginForm\BUS_QAL\bin\Debug\QLlogin_log.ldf
 C:\Users\phamh\source\repos\LoginForm\BUS_QAL\bin\Debug\BUS_QAL.dll
 C:\Users\phamh\source\repos\LoginForm\BUS_QAL\bin\Debug\BUS_QAL.pdb
 C:\Users\phamh\source\repos\LoginForm\BUS_QAL\bin\Debug\DAL_Login.dll
 C:\Users\phamh\source\repos\LoginForm\BUS_QAL\bin\Debug\DTO_Login.dll
 C:\Users\phamh\source\repos\LoginForm\BUS_QAL\bin\Debug\DAL_Login.pdb
+C:\Users\phamh\source\repos\LoginForm\BUS_QAL\bin\Debug\DAL_Login.dll.config
 C:\Users\phamh\source\repos\LoginForm\BUS_QAL\bin\Debug\DTO_Login.pdb
 C:\Users\phamh\source\repos\LoginForm\BUS_QAL\obj\Debug\BUS_QAL.csprojAssemblyReference.cache
 C:\Users\phamh\source\repos\LoginForm\BUS_QAL\obj\Debug\BUS_QAL.csproj.CoreCompileInputs.cache
 C:\Users\phamh\source\repos\LoginForm\BUS_QAL\obj\Debug\BUS_QAL.csproj.CopyComplete
 C:\Users\phamh\source\repos\LoginForm\BUS_QAL\obj\Debug\BUS_QAL.dll
 C:\Users\phamh\source\repos\LoginForm\BUS_QAL\obj\Debug\BUS_QAL.pdb
-C:\Users\phamh\source\repos\LoginForm\BUS_QAL\bin\Debug\QLlogin.mdf
-C:\Users\phamh\source\repos\LoginForm\BUS_QAL\bin\Debug\QLlogin_log.ldf
-C:\Users\phamh\source\repos\LoginForm\BUS_QAL\bin\Debug\DAL_Login.dll.config

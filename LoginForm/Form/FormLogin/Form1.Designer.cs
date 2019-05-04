@@ -63,6 +63,7 @@
             this.txtName.TabIndex = 3;
             this.txtName.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.txtName.OnValueChanged += new System.EventHandler(this.txtName_OnValueChanged);
+            this.txtName.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);
             // 
             // panel1
             // 
@@ -126,6 +127,7 @@
             this.txtPass.Text = "sdasd";
             this.txtPass.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.txtPass.OnValueChanged += new System.EventHandler(this.txtPass_OnValueChanged);
+            this.txtPass.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);
             // 
             // linkLabel1
             // 
@@ -211,6 +213,7 @@
             this.Opacity = 0.97D;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Load += new System.EventHandler(this.Form1_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
