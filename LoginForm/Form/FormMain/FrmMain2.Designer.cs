@@ -30,7 +30,7 @@
 		{
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmMain2));
-            DevExpress.XtraBars.Ribbon.ReduceOperation reduceOperation8 = new DevExpress.XtraBars.Ribbon.ReduceOperation();
+            DevExpress.XtraBars.Ribbon.ReduceOperation reduceOperation1 = new DevExpress.XtraBars.Ribbon.ReduceOperation();
             this.ribbon = new DevExpress.XtraBars.Ribbon.RibbonControl();
             this.btnMoiNhap = new DevExpress.XtraBars.BarButtonItem();
             this.btnDsKho = new DevExpress.XtraBars.BarButtonItem();
@@ -151,6 +151,7 @@
             this.barStaticItem2.Caption = "Exit";
             this.barStaticItem2.Id = 4;
             this.barStaticItem2.Name = "barStaticItem2";
+            this.barStaticItem2.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barStaticItem2_ItemClick);
             // 
             // barStaticItem1
             // 
@@ -170,6 +171,7 @@
             this.btnChiTiet.Id = 5;
             this.btnChiTiet.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnChiTiet.ImageOptions.LargeImage")));
             this.btnChiTiet.Name = "btnChiTiet";
+            this.btnChiTiet.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnChiTiet_ItemClick);
             // 
             // btnDanhSachNhap
             // 
@@ -272,19 +274,18 @@
             this.ribbonPageGroup1,
             this.ribbonPageGroup2});
             this.Kho.Name = "Kho";
-            reduceOperation8.Behavior = DevExpress.XtraBars.Ribbon.ReduceOperationBehavior.Single;
-            reduceOperation8.Group = null;
-            reduceOperation8.ItemLinkIndex = 0;
-            reduceOperation8.ItemLinksCount = 0;
-            reduceOperation8.Operation = DevExpress.XtraBars.Ribbon.ReduceOperationType.LargeButtons;
-            this.Kho.ReduceOperations.Add(reduceOperation8);
+            reduceOperation1.Behavior = DevExpress.XtraBars.Ribbon.ReduceOperationBehavior.Single;
+            reduceOperation1.Group = null;
+            reduceOperation1.ItemLinkIndex = 0;
+            reduceOperation1.ItemLinksCount = 0;
+            reduceOperation1.Operation = DevExpress.XtraBars.Ribbon.ReduceOperationType.LargeButtons;
+            this.Kho.ReduceOperations.Add(reduceOperation1);
             this.Kho.Text = "Home";
             // 
             // ribbonPageGroup1
             // 
             this.ribbonPageGroup1.ItemLinks.Add(this.btnDsKho, true);
             this.ribbonPageGroup1.ItemLinks.Add(this.btnKtTon, true);
-            this.ribbonPageGroup1.ItemLinks.Add(this.btnMoiNhap, true);
             this.ribbonPageGroup1.ItemLinks.Add(this.btnChiTiet, true);
             this.ribbonPageGroup1.Name = "ribbonPageGroup1";
             this.ribbonPageGroup1.Text = "Quản Lí Kho";
@@ -355,10 +356,10 @@
             // 
             // ribbonStatusBar
             // 
-            this.ribbonStatusBar.Location = new System.Drawing.Point(0, 1069);
+            this.ribbonStatusBar.Location = new System.Drawing.Point(0, 1060);
             this.ribbonStatusBar.Name = "ribbonStatusBar";
             this.ribbonStatusBar.Ribbon = this.ribbon;
-            this.ribbonStatusBar.Size = new System.Drawing.Size(1930, 35);
+            this.ribbonStatusBar.Size = new System.Drawing.Size(1930, 44);
             // 
             // imageCollection1
             // 

@@ -50,7 +50,7 @@
             this.txtName.Font = new System.Drawing.Font("Century Gothic", 15F);
             this.txtName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtName.HintForeColor = System.Drawing.Color.Silver;
-            this.txtName.HintText = "User Name";
+            this.txtName.HintText = "Tên Tài Khoản";
             this.txtName.isPassword = false;
             this.txtName.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.txtName.LineIdleColor = System.Drawing.Color.Gray;
@@ -210,7 +210,6 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Form1";
-            this.Opacity = 0.97D;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Load += new System.EventHandler(this.Form1_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);

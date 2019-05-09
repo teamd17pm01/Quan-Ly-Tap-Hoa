@@ -34,18 +34,18 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(372, 112);
+            this.button1.Location = new System.Drawing.Point(3, 0);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(8, 8);
+            this.button1.Size = new System.Drawing.Size(296, 626);
             this.button1.TabIndex = 0;
             this.button1.Text = "button1";
             this.button1.UseVisualStyleBackColor = true;
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(534, 234);
+            this.button2.Location = new System.Drawing.Point(656, 0);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(285, 93);
+            this.button2.Size = new System.Drawing.Size(296, 626);
             this.button2.TabIndex = 1;
             this.button2.Text = "button2";
             this.button2.UseVisualStyleBackColor = true;
@@ -57,7 +57,7 @@
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Name = "hungpham";
-            this.Size = new System.Drawing.Size(955, 626);
+            this.Size = new System.Drawing.Size(946, 626);
             this.ResumeLayout(false);
 
         }

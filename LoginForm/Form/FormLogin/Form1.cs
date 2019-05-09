@@ -59,10 +59,7 @@ namespace LoginForm
             Application.Run(frm);
         }
 
-        private void simpleButton1_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("Chức năng của ID này là : " + b.Permission(int.Parse(id)));
-        }
+     
 
         private void txtName_OnValueChanged(object sender, EventArgs e)
         {
@@ -98,7 +95,6 @@ namespace LoginForm
         {
             dto thongtin = new dto(txtName.Text, txtPass.Text);    //thong tin de tim kiem tra ton tai
             dto thongtin2 = new dto(txtName.Text);                  //Thong tin de kiem tra 
-            id = b.idthanhvien(thongtin);
             if (txtName.Text != "" && txtPass.Text != "")
             {
                 if (b.KiemTraAccountTonTai(thongtin2))

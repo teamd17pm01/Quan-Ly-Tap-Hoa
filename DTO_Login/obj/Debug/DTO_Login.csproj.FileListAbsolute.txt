@@ -3,3 +3,4 @@ C:\Users\phamh\source\repos\LoginForm\DTO_Login\bin\Debug\DTO_Login.pdb
 C:\Users\phamh\source\repos\LoginForm\DTO_Login\obj\Debug\DTO_Login.csproj.CoreCompileInputs.cache
 C:\Users\phamh\source\repos\LoginForm\DTO_Login\obj\Debug\DTO_Login.dll
 C:\Users\phamh\source\repos\LoginForm\DTO_Login\obj\Debug\DTO_Login.pdb
+C:\Users\phamh\source\repos\LoginForm\DTO_Login\obj\Debug\DTO_Login.csprojAssemblyReference.cache

@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="LinQBase">
+  <DataContextMoniker Name="/LinQBaseDataContext" />
+  <nestedChildShapes>
+    <classShape Id="c19fe1fc-7b2e-4b5c-a77f-eb1a8faf4d72" absoluteBounds="4.625, 0.625, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/LinQBaseDataContext/tbl_chitietsp" />
+      <nestedChildShapes>
+        <elementListCompartment Id="32ce2829-7582-48d4-b221-d97e191f5dbd" absoluteBounds="4.6400000000000006, 1.085, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="1d715175-89d9-4dd6-8c35-bd2d1a0b34d9" absoluteBounds="4, 3.5, 2, 2.5401025390625">
+      <DataClassMoniker Name="/LinQBaseDataContext/tbl_kho" />
+      <nestedChildShapes>
+        <elementListCompartment Id="28f86695-2e67-40bc-95e9-ad8a2e2d4bc5" absoluteBounds="4.015, 3.96, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(5.3125 : 3.5); (5.3125 : 2.20359537760417)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/LinQBaseDataContext/tbl_kho/tbl_kho_tbl_chitietsp" />
+      <nodes>
+        <classShapeMoniker Id="1d715175-89d9-4dd6-8c35-bd2d1a0b34d9" />
+        <classShapeMoniker Id="c19fe1fc-7b2e-4b5c-a77f-eb1a8faf4d72" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="62091ecf-9298-43c2-9846-2bb92cd35167" absoluteBounds="0.5, 3.25, 2, 1.3862939453125">
+      <DataClassMoniker Name="/LinQBaseDataContext/tbl_nhomSP" />
+      <nestedChildShapes>
+        <elementListCompartment Id="5e20ff42-e0b2-4ad5-b6cc-d70b4b9f3505" absoluteBounds="0.51500000000000012, 3.71, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(2.5 : 4.06814697265625); (4 : 4.06814697265625)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/LinQBaseDataContext/tbl_nhomSP/tbl_nhomSP_tbl_kho" />
+      <nodes>
+        <classShapeMoniker Id="62091ecf-9298-43c2-9846-2bb92cd35167" />
+        <classShapeMoniker Id="1d715175-89d9-4dd6-8c35-bd2d1a0b34d9" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="1d675463-9ca5-4c54-a163-4f3277ee06f3" absoluteBounds="0.75, 0.5, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/LinQBaseDataContext/tbl_user" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d2e76054-5613-42de-8ad4-3cd2aa4591ca" absoluteBounds="0.765, 0.96, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

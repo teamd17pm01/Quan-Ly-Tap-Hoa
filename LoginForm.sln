@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BUS_QAL", "BUS_QAL\BUS_QAL.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DTO_Login", "DTO_Login\DTO_Login.csproj", "{A8D0630D-BDAC-4045-978F-0248B277A357}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassLibrary1", "ClassLibrary1\ClassLibrary1.csproj", "{13684C71-0CAF-4DCD-88CF-3100A54AF168}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{A8D0630D-BDAC-4045-978F-0248B277A357}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A8D0630D-BDAC-4045-978F-0248B277A357}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A8D0630D-BDAC-4045-978F-0248B277A357}.Release|Any CPU.Build.0 = Release|Any CPU
+		{13684C71-0CAF-4DCD-88CF-3100A54AF168}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{13684C71-0CAF-4DCD-88CF-3100A54AF168}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{13684C71-0CAF-4DCD-88CF-3100A54AF168}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{13684C71-0CAF-4DCD-88CF-3100A54AF168}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

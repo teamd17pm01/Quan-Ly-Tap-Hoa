@@ -1,0 +1,7 @@
+C:\Users\phamh\source\repos\LoginForm\ClassLibrary1\bin\Debug\ClassLibrary1.dll.config
+C:\Users\phamh\source\repos\LoginForm\ClassLibrary1\bin\Debug\ClassLibrary1.dll
+C:\Users\phamh\source\repos\LoginForm\ClassLibrary1\bin\Debug\ClassLibrary1.pdb
+C:\Users\phamh\source\repos\LoginForm\ClassLibrary1\obj\Debug\ClassLibrary1.csprojAssemblyReference.cache
+C:\Users\phamh\source\repos\LoginForm\ClassLibrary1\obj\Debug\ClassLibrary1.csproj.CoreCompileInputs.cache
+C:\Users\phamh\source\repos\LoginForm\ClassLibrary1\obj\Debug\ClassLibrary1.dll
+C:\Users\phamh\source\repos\LoginForm\ClassLibrary1\obj\Debug\ClassLibrary1.pdb

@@ -6,16 +6,14 @@ using System.Threading.Tasks;
 using DTO_Login;
 using DAL_Login;
 using System.Data;
+using ClassLibrary1;
 
 namespace BUS_QAL
 {
     public class bus
     {
         private qal data = new qal();
-        public string idthanhvien(dto tv)
-        {
-            return data.getID(tv);
-        }
+       
         public bool KiemTraAccountTonTai(dto tv)
         {
             return data.KiemTraTonTai(tv);
@@ -24,10 +22,7 @@ namespace BUS_QAL
         {
             return data.KtTaiKhoan(tv);
         }
-        public string Permission(int id)
-        {
-            return data.id_per(id);
-        }
+        
         public bool AddTv(dto tv)
         {
             return data.addNewUser(tv);
@@ -35,6 +30,21 @@ namespace BUS_QAL
         public bool ResetPassWord(dto tv)
         {
             return data.UpdatePassword(tv);
+        }
+
+        //Form Main
+        /// <summary>
+        /// Danh Sach Kho
+        /// </summary>
+        /// <returns></returns>
+        public IQueryable<tbl_kho> GetKho()
+        {
+            var dat = data.Load_Kho();
+            return dat;
+        }
+        public IQueryable<tbl_kho> GetDSTheoNhomHang(string nhom)
+        {
+            return data.TimKiemNhomHang(nhom);
         }
     }
 }

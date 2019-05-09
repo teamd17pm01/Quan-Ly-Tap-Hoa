@@ -12,7 +12,7 @@ using BUS_QAL;
 
 namespace LoginForm
 {
-    public partial class frmRegister : Form
+    public partial class frmRegister : DevExpress.XtraEditors.XtraForm
     {
         public frmRegister()
         {

@@ -15,6 +15,7 @@ namespace LoginForm
     {
         //UCDanhSach ds;
         FormDs ds;
+        frmChiTietSP chitiet;
         public FrmMain2()
         {
             InitializeComponent();
@@ -69,6 +70,21 @@ namespace LoginForm
                 }
             }
             return false;
+        }
+
+        private void barStaticItem2_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void btnChiTiet_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            if (!CheckExistForm("frmChiTietSP"))
+            {
+                chitiet = new frmChiTietSP();
+                chitiet.MdiParent = this;
+                chitiet.Show();
+            }
         }
     }
 }

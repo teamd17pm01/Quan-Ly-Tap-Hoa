@@ -70,6 +70,7 @@
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
     <Reference Include="System.DirectoryServices" />
     <Reference Include="System.Management" />
     <Reference Include="System.Runtime.Remoting" />
@@ -82,6 +83,9 @@
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="Telerik.WinControls, Version=2018.3.1016.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e" />
+    <Reference Include="Telerik.WinControls.UI, Version=2018.3.1016.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="TelerikCommon, Version=2018.3.1016.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e" />
     <Reference Include="UIAutomationClient" />
     <Reference Include="UIAutomationProvider" />
     <Reference Include="VisualReactiveWinForms, Version=1.0.0.0, Culture=neutral, PublicKeyToken=0ee513efc52b401d, processorArchitecture=MSIL">
@@ -96,6 +100,12 @@
     </Compile>
     <Compile Include="Form\FormChucNang\FormDs.Designer.cs">
       <DependentUpon>FormDs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\FormChucNang\frmChiTietSP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\FormChucNang\frmChiTietSP.Designer.cs">
+      <DependentUpon>frmChiTietSP.cs</DependentUpon>
     </Compile>
     <Compile Include="Form\FormLogin\Form1.cs">
       <SubType>Form</SubType>
@@ -129,14 +139,19 @@
     </Compile>
     <Compile Include="hungpham.cs">
       <SubType>UserControl</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Compile>
     <Compile Include="hungpham.Designer.cs">
       <DependentUpon>hungpham.cs</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form\FormChucNang\FormDs.resx">
       <DependentUpon>FormDs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\FormChucNang\frmChiTietSP.resx">
+      <DependentUpon>frmChiTietSP.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form\FormLogin\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
@@ -155,6 +170,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="hungpham.resx">
       <DependentUpon>hungpham.cs</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -201,6 +217,10 @@
       <Project>{d5c9d205-3472-473a-a3a7-58389d2dad08}</Project>
       <Name>BUS_QAL</Name>
     </ProjectReference>
+    <ProjectReference Include="..\ClassLibrary1\ClassLibrary1.csproj">
+      <Project>{13684c71-0caf-4dcd-88cf-3100a54af168}</Project>
+      <Name>ClassLibrary1</Name>
+    </ProjectReference>
     <ProjectReference Include="..\DTO_Login\DTO_Login.csproj">
       <Project>{a8d0630d-bdac-4045-978f-0248b277a357}</Project>
       <Name>DTO_Login</Name>
@@ -208,6 +228,9 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="UserControl\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.

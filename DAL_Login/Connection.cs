@@ -9,6 +9,6 @@ namespace DAL_Login
 {
     public class Connection
     {
-       protected SqlConnection connection = new SqlConnection("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\phamh\\source\\repos\\LoginForm\\LoginForm\\QLlogin.mdf;Integrated Security=True");
+       protected SqlConnection connection = new SqlConnection(@"Data Source=DESKTOP-16PLU27\SQLEXPRESS;Initial Catalog=LoginForm;Integrated Security=True");
     }
 }

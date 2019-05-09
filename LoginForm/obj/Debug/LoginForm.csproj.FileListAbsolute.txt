@@ -202,3 +202,15 @@ C:\Users\phamh\source\repos\LoginForm\LoginForm\obj\Debug\LoginForm.exe
 C:\Users\phamh\source\repos\LoginForm\LoginForm\obj\Debug\LoginForm.pdb
 C:\Users\phamh\source\repos\LoginForm\LoginForm\obj\Debug\LoginForm.FormDs.resources
 C:\Users\phamh\source\repos\LoginForm\LoginForm\obj\Debug\LoginForm.hungpham.resources
+C:\Users\phamh\source\repos\LoginForm\LoginForm\bin\Debug\hungpham.resx
+C:\Users\phamh\source\repos\LoginForm\LoginForm\bin\Debug\hungpham.cs
+C:\Users\phamh\source\repos\LoginForm\LoginForm\bin\Debug\hungpham.Designer.cs
+C:\Users\phamh\source\repos\LoginForm\LoginForm\bin\Debug\ClassLibrary1.dll
+C:\Users\phamh\source\repos\LoginForm\LoginForm\bin\Debug\ClassLibrary1.pdb
+C:\Users\phamh\source\repos\LoginForm\LoginForm\bin\Debug\ClassLibrary1.dll.config
+C:\Users\phamh\source\repos\LoginForm\LoginForm\obj\Debug\LoginForm.frmChiTietSP.resources
+C:\Users\phamh\source\repos\LoginForm\LoginForm\bin\Debug\Telerik.WinControls.dll
+C:\Users\phamh\source\repos\LoginForm\LoginForm\bin\Debug\Telerik.WinControls.UI.dll
+C:\Users\phamh\source\repos\LoginForm\LoginForm\bin\Debug\TelerikCommon.dll
+C:\Users\phamh\source\repos\LoginForm\LoginForm\bin\Debug\Telerik.WinControls.xml
+C:\Users\phamh\source\repos\LoginForm\LoginForm\bin\Debug\Telerik.WinControls.UI.xml

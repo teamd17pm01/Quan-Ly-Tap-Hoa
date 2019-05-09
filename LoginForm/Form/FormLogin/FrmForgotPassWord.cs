@@ -11,7 +11,7 @@ using BUS_QAL;
 using DTO_Login;
 namespace LoginForm
 {
-    public partial class FrmForgotPassWord : Form
+    public partial class FrmForgotPassWord : DevExpress.XtraEditors.XtraForm
     {
         public FrmForgotPassWord()
         {
@@ -91,7 +91,7 @@ namespace LoginForm
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            this.Hide();
         }
 
         private void btnOut_MouseHover(object sender, EventArgs e)

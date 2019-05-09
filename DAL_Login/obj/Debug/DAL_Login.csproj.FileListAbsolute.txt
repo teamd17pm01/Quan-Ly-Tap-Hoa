@@ -1,5 +1,3 @@
-C:\Users\phamh\source\repos\LoginForm\DAL_Login\bin\Debug\QLlogin.mdf
-C:\Users\phamh\source\repos\LoginForm\DAL_Login\bin\Debug\QLlogin_log.ldf
 C:\Users\phamh\source\repos\LoginForm\DAL_Login\bin\Debug\DAL_Login.dll.config
 C:\Users\phamh\source\repos\LoginForm\DAL_Login\bin\Debug\DAL_Login.dll
 C:\Users\phamh\source\repos\LoginForm\DAL_Login\bin\Debug\DAL_Login.pdb
@@ -10,3 +8,6 @@ C:\Users\phamh\source\repos\LoginForm\DAL_Login\obj\Debug\DAL_Login.csproj.CoreC
 C:\Users\phamh\source\repos\LoginForm\DAL_Login\obj\Debug\DAL_Login.csproj.CopyComplete
 C:\Users\phamh\source\repos\LoginForm\DAL_Login\obj\Debug\DAL_Login.dll
 C:\Users\phamh\source\repos\LoginForm\DAL_Login\obj\Debug\DAL_Login.pdb
+C:\Users\phamh\source\repos\LoginForm\DAL_Login\bin\Debug\ClassLibrary1.dll
+C:\Users\phamh\source\repos\LoginForm\DAL_Login\bin\Debug\ClassLibrary1.pdb
+C:\Users\phamh\source\repos\LoginForm\DAL_Login\bin\Debug\ClassLibrary1.dll.config

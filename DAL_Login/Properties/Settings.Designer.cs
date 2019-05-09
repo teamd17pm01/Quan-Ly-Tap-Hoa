@@ -33,5 +33,16 @@ namespace DAL_Login.Properties {
                 return ((string)(this["QLloginConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-16PLU27\\SQLEXPRESS;Initial Catalog=QLLoginForm;Integrated Sec" +
+            "urity=True")]
+        public string QLLoginFormConnectionString {
+            get {
+                return ((string)(this["QLLoginFormConnectionString"]));
+            }
+        }
     }
 }
