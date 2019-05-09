@@ -76,6 +76,7 @@ namespace LoginForm
             }
             catch
             {
+
                 MessageBox.Show("Tìm Kiếm Bị Lỗi", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
