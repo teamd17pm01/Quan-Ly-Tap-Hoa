@@ -35,7 +35,6 @@
             this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader6 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader7 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader9 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader8 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -43,6 +42,7 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
+            this.btnDel = new DevExpress.XtraEditors.SimpleButton();
             this.btnTimKiem = new DevExpress.XtraEditors.SimpleButton();
             this.panel4 = new System.Windows.Forms.Panel();
             this.txtNhomSP = new Bunifu.Framework.UI.BunifuTextbox();
@@ -58,7 +58,6 @@
             this.columnHeader3,
             this.columnHeader4,
             this.columnHeader5,
-            this.columnHeader6,
             this.columnHeader7,
             this.columnHeader9,
             this.columnHeader8});
@@ -69,6 +68,7 @@
             this.lstDanhSachSanPham.UseCompatibleStateImageBehavior = false;
             this.lstDanhSachSanPham.View = System.Windows.Forms.View.Details;
             this.lstDanhSachSanPham.SelectedIndexChanged += new System.EventHandler(this.listView1_SelectedIndexChanged);
+            this.lstDanhSachSanPham.MouseHover += new System.EventHandler(this.lstDanhSachSanPham_MouseHover);
             // 
             // columnHeader1
             // 
@@ -99,12 +99,6 @@
             this.columnHeader5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.columnHeader5.Width = 90;
             // 
-            // columnHeader6
-            // 
-            this.columnHeader6.Text = "NGAY NHAP";
-            this.columnHeader6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.columnHeader6.Width = 120;
-            // 
             // columnHeader7
             // 
             this.columnHeader7.Text = "NHA CUNG CAP";
@@ -112,13 +106,13 @@
             // 
             // columnHeader9
             // 
-            this.columnHeader9.DisplayIndex = 8;
+            this.columnHeader9.DisplayIndex = 7;
             this.columnHeader9.Text = "Nhóm SP";
             this.columnHeader9.Width = 120;
             // 
             // columnHeader8
             // 
-            this.columnHeader8.DisplayIndex = 7;
+            this.columnHeader8.DisplayIndex = 6;
             this.columnHeader8.Text = "GHI CHU";
             this.columnHeader8.Width = 100;
             // 
@@ -127,7 +121,7 @@
             this.panel2.BackColor = System.Drawing.Color.Gray;
             this.panel2.Location = new System.Drawing.Point(475, -3);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(16, 744);
+            this.panel2.Size = new System.Drawing.Size(15, 777);
             this.panel2.TabIndex = 4;
             // 
             // panel3
@@ -141,16 +135,18 @@
             // bunifuCustomLabel1
             // 
             this.bunifuCustomLabel1.Font = new System.Drawing.Font("Bahnschrift", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomLabel1.ForeColor = System.Drawing.Color.White;
+            this.bunifuCustomLabel1.ForeColor = System.Drawing.Color.Black;
             this.bunifuCustomLabel1.Location = new System.Drawing.Point(25, 69);
             this.bunifuCustomLabel1.Name = "bunifuCustomLabel1";
             this.bunifuCustomLabel1.Size = new System.Drawing.Size(450, 51);
             this.bunifuCustomLabel1.TabIndex = 0;
             this.bunifuCustomLabel1.Text = "Tìm Kiếm Theo Nhóm Sản Phẩm: ";
-            this.bunifuCustomLabel1.Click += new System.EventHandler(this.bunifuCustomLabel1_Click);
             // 
             // groupControl1
             // 
+            this.groupControl1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.groupControl1.Controls.Add(this.btnDel);
             this.groupControl1.Controls.Add(this.btnTimKiem);
             this.groupControl1.Controls.Add(this.panel4);
             this.groupControl1.Controls.Add(this.bunifuCustomLabel1);
@@ -159,7 +155,18 @@
             this.groupControl1.Name = "groupControl1";
             this.groupControl1.Size = new System.Drawing.Size(489, 767);
             this.groupControl1.TabIndex = 8;
-            this.groupControl1.Paint += new System.Windows.Forms.PaintEventHandler(this.groupControl1_Paint);
+            // 
+            // btnDel
+            // 
+            this.btnDel.Appearance.Font = new System.Drawing.Font("Segoe UI Black", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDel.Appearance.Options.UseFont = true;
+            this.btnDel.Enabled = false;
+            this.btnDel.Location = new System.Drawing.Point(6, 678);
+            this.btnDel.Name = "btnDel";
+            this.btnDel.Size = new System.Drawing.Size(483, 78);
+            this.btnDel.TabIndex = 7;
+            this.btnDel.Text = "Delete Item";
+            this.btnDel.Click += new System.EventHandler(this.btnDel_Click);
             // 
             // btnTimKiem
             // 
@@ -182,6 +189,7 @@
             // 
             // txtNhomSP
             // 
+            this.txtNhomSP.AutoSize = true;
             this.txtNhomSP.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(81)))), ((int)(((byte)(97)))));
             this.txtNhomSP.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("txtNhomSP.BackgroundImage")));
             this.txtNhomSP.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
@@ -194,7 +202,6 @@
             this.txtNhomSP.Size = new System.Drawing.Size(428, 65);
             this.txtNhomSP.TabIndex = 3;
             this.txtNhomSP.text = "";
-            this.txtNhomSP.OnTextChange += new System.EventHandler(this.txtNhomSP_OnTextChange);
             // 
             // FormDs
             // 
@@ -209,9 +216,9 @@
             this.Controls.Add(this.lstDanhSachSanPham);
             this.Name = "FormDs";
             this.Text = "Danh Sách Sản Phẩm";
-            this.Load += new System.EventHandler(this.FormDs_Load);
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);
+            this.groupControl1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -230,10 +237,10 @@
         private System.Windows.Forms.ColumnHeader columnHeader3;
         private System.Windows.Forms.ColumnHeader columnHeader4;
         private System.Windows.Forms.ColumnHeader columnHeader5;
-        private System.Windows.Forms.ColumnHeader columnHeader6;
         private System.Windows.Forms.ColumnHeader columnHeader7;
         private System.Windows.Forms.ColumnHeader columnHeader8;
         private System.Windows.Forms.ColumnHeader columnHeader9;
         private DevExpress.XtraEditors.SimpleButton btnTimKiem;
+        private DevExpress.XtraEditors.SimpleButton btnDel;
     }
 }

@@ -30,7 +30,8 @@
 		{
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmMain2));
-            DevExpress.XtraBars.Ribbon.ReduceOperation reduceOperation1 = new DevExpress.XtraBars.Ribbon.ReduceOperation();
+            DevExpress.XtraBars.Ribbon.ReduceOperation reduceOperation6 = new DevExpress.XtraBars.Ribbon.ReduceOperation();
+            this.repositoryItemConditionalType1 = new DevExpress.XtraRichEdit.Design.RepositoryItemConditionalType();
             this.ribbon = new DevExpress.XtraBars.Ribbon.RibbonControl();
             this.btnMoiNhap = new DevExpress.XtraBars.BarButtonItem();
             this.btnDsKho = new DevExpress.XtraBars.BarButtonItem();
@@ -69,11 +70,20 @@
             this.defaultLookAndFeel1 = new DevExpress.LookAndFeel.DefaultLookAndFeel(this.components);
             this.documentManager1 = new DevExpress.XtraBars.Docking2010.DocumentManager(this.components);
             this.tabbedView1 = new DevExpress.XtraBars.Docking2010.Views.Tabbed.TabbedView(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemConditionalType1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ribbon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imageCollection1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.documentManager1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tabbedView1)).BeginInit();
             this.SuspendLayout();
+            // 
+            // repositoryItemConditionalType1
+            // 
+            this.repositoryItemConditionalType1.AutoHeight = false;
+            this.repositoryItemConditionalType1.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.repositoryItemConditionalType1.LookAndFeel.SkinName = "Sharp Plus";
+            this.repositoryItemConditionalType1.Name = "repositoryItemConditionalType1";
             // 
             // ribbon
             // 
@@ -103,7 +113,7 @@
             this.barButtonItem2,
             this.btnMuaBan});
             this.ribbon.Location = new System.Drawing.Point(0, 0);
-            this.ribbon.MaxItemId = 1;
+            this.ribbon.MaxItemId = 2;
             this.ribbon.Name = "ribbon";
             this.ribbon.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.Kho,
@@ -111,7 +121,7 @@
             this.ribbonPage2});
             this.ribbon.QuickToolbarItemLinks.Add(this.barSubItem1);
             this.ribbon.QuickToolbarItemLinks.Add(this.barSubItem2);
-            this.ribbon.Size = new System.Drawing.Size(1930, 220);
+            this.ribbon.Size = new System.Drawing.Size(1942, 224);
             this.ribbon.StatusBar = this.ribbonStatusBar;
             this.ribbon.Click += new System.EventHandler(this.ribbon_Click);
             // 
@@ -137,6 +147,7 @@
             this.btnKtTon.Id = 8;
             this.btnKtTon.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnKtTon.ImageOptions.LargeImage")));
             this.btnKtTon.Name = "btnKtTon";
+            this.btnKtTon.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnKtTon_ItemClick);
             // 
             // barSubItem1
             // 
@@ -175,10 +186,11 @@
             // 
             // btnDanhSachNhap
             // 
-            this.btnDanhSachNhap.Caption = "Danh Sách Nhập";
+            this.btnDanhSachNhap.Caption = "Danh Sách Nhập / Xuất";
             this.btnDanhSachNhap.Id = 6;
             this.btnDanhSachNhap.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnDanhSachNhap.ImageOptions.LargeImage")));
             this.btnDanhSachNhap.Name = "btnDanhSachNhap";
+            this.btnDanhSachNhap.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnDanhSachNhap_ItemClick);
             // 
             // barButtonItem1
             // 
@@ -186,6 +198,7 @@
             this.barButtonItem1.Id = 7;
             this.barButtonItem1.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem1.ImageOptions.LargeImage")));
             this.barButtonItem1.Name = "barButtonItem1";
+            this.barButtonItem1.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem1_ItemClick);
             // 
             // btnAdd
             // 
@@ -201,6 +214,7 @@
             this.btnDel.Id = 9;
             this.btnDel.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnDel.ImageOptions.LargeImage")));
             this.btnDel.Name = "btnDel";
+            this.btnDel.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnDel_ItemClick);
             // 
             // btnUpt
             // 
@@ -208,13 +222,16 @@
             this.btnUpt.Id = 10;
             this.btnUpt.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnUpt.ImageOptions.LargeImage")));
             this.btnUpt.Name = "btnUpt";
+            this.btnUpt.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnUpt_ItemClick);
             // 
             // btnSave
             // 
             this.btnSave.Caption = "Lưu";
+            this.btnSave.Enabled = false;
             this.btnSave.Id = 12;
             this.btnSave.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnSave.ImageOptions.LargeImage")));
             this.btnSave.Name = "btnSave";
+            this.btnSave.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnSave_ItemClick);
             // 
             // btnHuy
             // 
@@ -223,6 +240,7 @@
             this.btnHuy.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnHuy.ImageOptions.Image")));
             this.btnHuy.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnHuy.ImageOptions.LargeImage")));
             this.btnHuy.Name = "btnHuy";
+            this.btnHuy.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnHuy_ItemClick);
             // 
             // btnDSKhachHang
             // 
@@ -238,6 +256,7 @@
             this.btnDSNhaCungCap.Id = 3;
             this.btnDSNhaCungCap.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnDSNhaCungCap.ImageOptions.LargeImage")));
             this.btnDSNhaCungCap.Name = "btnDSNhaCungCap";
+            this.btnDSNhaCungCap.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnDSNhaCungCap_ItemClick);
             // 
             // btnChiTietNCC
             // 
@@ -246,6 +265,7 @@
             this.btnChiTietNCC.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnChiTietNCC.ImageOptions.LargeImage")));
             this.btnChiTietNCC.Name = "btnChiTietNCC";
             this.btnChiTietNCC.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.btnChiTietNCC.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnChiTietNCC_ItemClick);
             // 
             // btnInfor
             // 
@@ -253,6 +273,7 @@
             this.btnInfor.Id = 5;
             this.btnInfor.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnInfor.ImageOptions.LargeImage")));
             this.btnInfor.Name = "btnInfor";
+            this.btnInfor.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnInfor_ItemClick);
             // 
             // barButtonItem2
             // 
@@ -262,11 +283,12 @@
             // 
             // btnMuaBan
             // 
-            this.btnMuaBan.Caption = "Mua Hàng";
+            this.btnMuaBan.Caption = "Bán Hàng";
             this.btnMuaBan.Id = 7;
             this.btnMuaBan.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnMuaBan.ImageOptions.LargeImage")));
             this.btnMuaBan.Name = "btnMuaBan";
             this.btnMuaBan.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.btnMuaBan.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnMuaBan_ItemClick);
             // 
             // Kho
             // 
@@ -274,12 +296,12 @@
             this.ribbonPageGroup1,
             this.ribbonPageGroup2});
             this.Kho.Name = "Kho";
-            reduceOperation1.Behavior = DevExpress.XtraBars.Ribbon.ReduceOperationBehavior.Single;
-            reduceOperation1.Group = null;
-            reduceOperation1.ItemLinkIndex = 0;
-            reduceOperation1.ItemLinksCount = 0;
-            reduceOperation1.Operation = DevExpress.XtraBars.Ribbon.ReduceOperationType.LargeButtons;
-            this.Kho.ReduceOperations.Add(reduceOperation1);
+            reduceOperation6.Behavior = DevExpress.XtraBars.Ribbon.ReduceOperationBehavior.Single;
+            reduceOperation6.Group = null;
+            reduceOperation6.ItemLinkIndex = 0;
+            reduceOperation6.ItemLinksCount = 0;
+            reduceOperation6.Operation = DevExpress.XtraBars.Ribbon.ReduceOperationType.LargeButtons;
+            this.Kho.ReduceOperations.Add(reduceOperation6);
             this.Kho.Text = "Home";
             // 
             // ribbonPageGroup1
@@ -293,7 +315,6 @@
             // ribbonPageGroup2
             // 
             this.ribbonPageGroup2.ItemLinks.Add(this.btnDanhSachNhap);
-            this.ribbonPageGroup2.ItemLinks.Add(this.barButtonItem1);
             this.ribbonPageGroup2.Name = "ribbonPageGroup2";
             this.ribbonPageGroup2.Text = "Thông Tin Đơn Hàng";
             // 
@@ -359,7 +380,7 @@
             this.ribbonStatusBar.Location = new System.Drawing.Point(0, 1060);
             this.ribbonStatusBar.Name = "ribbonStatusBar";
             this.ribbonStatusBar.Ribbon = this.ribbon;
-            this.ribbonStatusBar.Size = new System.Drawing.Size(1930, 44);
+            this.ribbonStatusBar.Size = new System.Drawing.Size(1942, 44);
             // 
             // imageCollection1
             // 
@@ -373,7 +394,7 @@
             // 
             // defaultLookAndFeel1
             // 
-            this.defaultLookAndFeel1.LookAndFeel.SkinName = "Sharp Plus";
+            this.defaultLookAndFeel1.LookAndFeel.SkinName = "Office 2016 Colorful";
             // 
             // documentManager1
             // 
@@ -391,11 +412,11 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScroll = true;
             this.AutoSize = true;
-            this.ClientSize = new System.Drawing.Size(1930, 1104);
+            this.ClientSize = new System.Drawing.Size(1942, 1104);
             this.Controls.Add(this.ribbonStatusBar);
             this.Controls.Add(this.ribbon);
-            this.IsMdiContainer = true;
             this.Name = "FrmMain2";
             this.Ribbon = this.ribbon;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -404,6 +425,7 @@
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FrmMain2_FormClosed);
             this.Load += new System.EventHandler(this.FrmMain2_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemConditionalType1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ribbon)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.imageCollection1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.documentManager1)).EndInit();
@@ -455,5 +477,6 @@
         private DevExpress.XtraBars.Docking2010.Views.Tabbed.Document document1;
         private DevExpress.XtraBars.BarButtonItem btnMuaBan;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup4;
+        private DevExpress.XtraRichEdit.Design.RepositoryItemConditionalType repositoryItemConditionalType1;
     }
 }

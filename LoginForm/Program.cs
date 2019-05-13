@@ -22,7 +22,7 @@ namespace LoginForm
             BonusSkins.Register();
             SkinManager.EnableFormSkins();
             UserLookAndFeel.Default.SetSkinStyle("DevExpress Style");
-            Application.Run(new FrmMain2());
+            Application.Run(new Form1());
         }
     }
 }
