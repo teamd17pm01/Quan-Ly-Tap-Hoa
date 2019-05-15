@@ -23,7 +23,7 @@
     <UpdatePeriodically>false</UpdatePeriodically>
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
-    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationRevision>4</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
@@ -180,10 +180,10 @@
     <Compile Include="Form\FormChucNang\frmNhaCungCap.designer.cs">
       <DependentUpon>frmNhaCungCap.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmMuaHang.cs">
+    <Compile Include="Form\FormChucNang\FrmMuaHang.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmMuaHang.Designer.cs">
+    <Compile Include="Form\FormChucNang\FrmMuaHang.Designer.cs">
       <DependentUpon>FrmMuaHang.cs</DependentUpon>
     </Compile>
     <Compile Include="hungpham.cs">
@@ -232,7 +232,7 @@
     <EmbeddedResource Include="Form\FormChucNang\frmNhaCungCap.resx">
       <DependentUpon>frmNhaCungCap.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmMuaHang.resx">
+    <EmbeddedResource Include="Form\FormChucNang\FrmMuaHang.resx">
       <DependentUpon>FrmMuaHang.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="hungpham.resx">
@@ -303,15 +303,6 @@
   </ItemGroup>
   <ItemGroup>
     <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="LoginForm.mdf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="LoginForm_log.ldf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      <DependentUpon>LoginForm.mdf</DependentUpon>
-    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.

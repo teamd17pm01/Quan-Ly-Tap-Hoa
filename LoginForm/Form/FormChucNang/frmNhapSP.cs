@@ -47,7 +47,7 @@ namespace LoginForm
                     Nhomsp = txtNhomSP.Text,
                     Ghichu = txtGhiChu.Text
                 };
-                if (func.NhapSanPham(infor))
+                if (!func.NhapSanPham(infor))
                 {
                     MessageBox.Show("Thêm Sản Phẩm Thành Công", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
                 }

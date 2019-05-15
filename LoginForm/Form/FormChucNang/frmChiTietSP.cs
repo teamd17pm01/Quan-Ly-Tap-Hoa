@@ -15,12 +15,12 @@ using Telerik.WinControls.UI;
 
 namespace LoginForm
 {
-    public partial class frmChiTietSP :DevExpress.XtraEditors.XtraForm
+    public partial class frmChiTietSP : DevExpress.XtraEditors.XtraForm
     {
         bus func = new bus();
         public frmChiTietSP()
         {
-            InitializeComponent();  
+            InitializeComponent();
             Load_DsNhom();
             load_DSchitiet();
         }
@@ -42,7 +42,7 @@ namespace LoginForm
             lstDSNhom.AllowRemove = false;
             lstDSNhom.DataSource = item;
 
-        }    
+        }
         //LOAD DANH SACH CHI TIET
         private void load_DSchitiet()
         {
@@ -54,9 +54,9 @@ namespace LoginForm
         }
 
 
-           //METHOD CỦA SYSTEM
+        //METHOD CỦA SYSTEM
 
-            //ĐIỀU CHỈNH TÊN CỘT CHO DANH SÁCH NHÓM
+        //ĐIỀU CHỈNH TÊN CỘT CHO DANH SÁCH NHÓM
         private void lstDSNhom_ColumnCreating(object sender, ListViewColumnCreatingEventArgs e)
         {
             if (e.Column.FieldName == "MANHOM")
@@ -72,7 +72,7 @@ namespace LoginForm
                 e.Column.HeaderText = "Số Lượng";
             }
         }
-            //Điều Chỉnh Tên Cột Cho Danh Sách Sản Phẩm
+        //Điều Chỉnh Tên Cột Cho Danh Sách Sản Phẩm
         private void lstDanhSach_ColumnCreating(object sender, ListViewColumnCreatingEventArgs e)
         {
             if (e.Column.FieldName == "MASP")
@@ -95,7 +95,7 @@ namespace LoginForm
 
         private void ItemSort_SelectedIndexChanged(object sender, Telerik.WinControls.UI.Data.PositionChangedEventArgs e)
         {
-            
+
         }
 
         private void radDropDownList1_SelectedIndexChanged_3(object sender, Telerik.WinControls.UI.Data.PositionChangedEventArgs e)
@@ -108,7 +108,8 @@ namespace LoginForm
             ListViewSelectedItemCollection item = lstDanhSach.SelectedItems;
             foreach (ListViewDataItem it in item)
             {
-               
+                try
+                {
                     txtSTT.Text = it[0].ToString();
                     txtMa.Text = it[1].ToString().Trim();
                     txtNameSP.Text = it[2].ToString();
@@ -117,7 +118,7 @@ namespace LoginForm
                     //MessageBox.Show("" + txtMaNhom.Text + " " + txtMa.Text);
                     try
                     {
-     
+
                         Bitmap anh = new Bitmap(Application.StartupPath + "\\Picture\\" + txtMaNhom.Text + "\\" + txtMa.Text + ".jpg");
                         pic.Image = (Image)anh;
                     }
@@ -126,10 +127,14 @@ namespace LoginForm
                         MessageBox.Show("Chưa Có Hình Ảnh !!!", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     }
                 }
-                
+                catch
+                {
+
+                }
+
             }
 
-        
+        }
         //Điều chỉnh lại column của rad listview
     }
 }

@@ -30,7 +30,7 @@
 		{
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmMain2));
-            DevExpress.XtraBars.Ribbon.ReduceOperation reduceOperation6 = new DevExpress.XtraBars.Ribbon.ReduceOperation();
+            DevExpress.XtraBars.Ribbon.ReduceOperation reduceOperation1 = new DevExpress.XtraBars.Ribbon.ReduceOperation();
             this.repositoryItemConditionalType1 = new DevExpress.XtraRichEdit.Design.RepositoryItemConditionalType();
             this.ribbon = new DevExpress.XtraBars.Ribbon.RibbonControl();
             this.btnMoiNhap = new DevExpress.XtraBars.BarButtonItem();
@@ -269,7 +269,7 @@
             // 
             // btnInfor
             // 
-            this.btnInfor.Caption = "Thông Tin Người Dùng";
+            this.btnInfor.Caption = "Quyền Kinh Doanh";
             this.btnInfor.Id = 5;
             this.btnInfor.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnInfor.ImageOptions.LargeImage")));
             this.btnInfor.Name = "btnInfor";
@@ -296,12 +296,12 @@
             this.ribbonPageGroup1,
             this.ribbonPageGroup2});
             this.Kho.Name = "Kho";
-            reduceOperation6.Behavior = DevExpress.XtraBars.Ribbon.ReduceOperationBehavior.Single;
-            reduceOperation6.Group = null;
-            reduceOperation6.ItemLinkIndex = 0;
-            reduceOperation6.ItemLinksCount = 0;
-            reduceOperation6.Operation = DevExpress.XtraBars.Ribbon.ReduceOperationType.LargeButtons;
-            this.Kho.ReduceOperations.Add(reduceOperation6);
+            reduceOperation1.Behavior = DevExpress.XtraBars.Ribbon.ReduceOperationBehavior.Single;
+            reduceOperation1.Group = null;
+            reduceOperation1.ItemLinkIndex = 0;
+            reduceOperation1.ItemLinksCount = 0;
+            reduceOperation1.Operation = DevExpress.XtraBars.Ribbon.ReduceOperationType.LargeButtons;
+            this.Kho.ReduceOperations.Add(reduceOperation1);
             this.Kho.Text = "Home";
             // 
             // ribbonPageGroup1
@@ -373,14 +373,14 @@
             // 
             this.nguoidung.ItemLinks.Add(this.btnInfor);
             this.nguoidung.Name = "nguoidung";
-            this.nguoidung.Text = "Người Dùng";
+            this.nguoidung.Text = "Quyền Kinh Doanh";
             // 
             // ribbonStatusBar
             // 
-            this.ribbonStatusBar.Location = new System.Drawing.Point(0, 1060);
+            this.ribbonStatusBar.Location = new System.Drawing.Point(0, 1071);
             this.ribbonStatusBar.Name = "ribbonStatusBar";
             this.ribbonStatusBar.Ribbon = this.ribbon;
-            this.ribbonStatusBar.Size = new System.Drawing.Size(1942, 44);
+            this.ribbonStatusBar.Size = new System.Drawing.Size(1942, 33);
             // 
             // imageCollection1
             // 

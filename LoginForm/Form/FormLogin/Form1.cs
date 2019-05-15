@@ -44,7 +44,7 @@ namespace LoginForm
             t = new Thread(new ThreadStart(Splash));
             t.Start();
             string str = string.Empty;
-            for (int i = 0; i < 30000; i++)
+            for (int i = 0; i < 20000; i++)
             {
                 str += i.ToString();
             }

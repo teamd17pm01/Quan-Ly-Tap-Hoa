@@ -214,8 +214,6 @@ C:\Users\phamh\source\repos\LoginForm\LoginForm\bin\Debug\Telerik.WinControls.UI
 C:\Users\phamh\source\repos\LoginForm\LoginForm\bin\Debug\TelerikCommon.dll
 C:\Users\phamh\source\repos\LoginForm\LoginForm\bin\Debug\Telerik.WinControls.xml
 C:\Users\phamh\source\repos\LoginForm\LoginForm\bin\Debug\Telerik.WinControls.UI.xml
-C:\Users\phamh\source\repos\LoginForm\LoginForm\bin\Debug\LoginForm.mdf
-C:\Users\phamh\source\repos\LoginForm\LoginForm\bin\Debug\LoginForm_log.ldf
 C:\Users\phamh\source\repos\LoginForm\LoginForm\bin\Debug\Telerik.WinControls.RichTextEditor.dll
 C:\Users\phamh\source\repos\LoginForm\LoginForm\bin\Debug\Telerik.WinControls.RichTextEditor.xml
 C:\Users\phamh\source\repos\LoginForm\LoginForm\bin\Debug\Telerik.WinControls.GridView.dll

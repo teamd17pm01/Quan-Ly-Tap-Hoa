@@ -201,15 +201,30 @@ namespace DAL_Login
         {
             try
             {
+                
                 LinQBaseDataContext data = new LinQBaseDataContext(connection);
-                tbl_kho kho = data.tbl_khos.Single(tbl_kho => tbl_kho.TENSP == ma);
-                kho.SOLUONG = kho.SOLUONG - soluong;
-                data.SubmitChanges();
+                long sl = 0;
+                var linq = from product in data.tbl_khos
+                           where product.MASP.Trim() == ma
+                           select product;
+                foreach(var item in linq)
+                {
+                    sl =(long) item.SOLUONG;
+                }
+                if (soluong <= sl)
+                {
+                    sl -= soluong;
+                    tbl_kho kho = data.tbl_khos.Single(tbl_kho => tbl_kho.MASP.Trim() == ma);
+                    kho.SOLUONG = sl;
+                    data.SubmitChanges();
+                   
+                }
+                return true;
             }
             catch (Exception)
             {
             }
-            return true;
+            return false;
         }
         // NHAP SAN PHAM
         public bool Add_SanPham(InforSanPham infor)
@@ -233,7 +248,7 @@ namespace DAL_Login
             {
 
             }
-            return true;
+            return false;
         }
 
         //XOA SAN PHAM

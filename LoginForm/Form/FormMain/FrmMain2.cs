@@ -18,6 +18,7 @@ namespace LoginForm
         public delegate void DelegateSave();
         public delegate void DelegateCopy(FrmMain2 frm);
         public delegate void ReloadDs();
+
         //UCDanhSach ds;
         FormDs ds;
         frmChiTietSP chitiet;
@@ -130,6 +131,7 @@ namespace LoginForm
 
         private void btnKtTon_ItemClick(object sender, ItemClickEventArgs e)
         {
+            
             MessageBox.Show("Chức Năng Chưa Được Cập Nhật", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
         }
 

@@ -31,6 +31,7 @@ namespace LoginForm
 
             foreach (var k in linq)
             {
+                
                 ListViewItem item = new ListViewItem(k.MASP);
                 item.SubItems.Add(k.TENSP);
                 item.SubItems.Add(k.DONGIA.ToString());
